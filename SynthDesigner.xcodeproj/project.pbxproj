@@ -21,6 +21,11 @@
 		B3988ACC1858184100779818 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3988AAE1858184100779818 /* UIKit.framework */; };
 		B3988AD41858184100779818 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3988AD21858184100779818 /* InfoPlist.strings */; };
 		B3988AD61858184100779818 /* SynthDesignerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3988AD51858184100779818 /* SynthDesignerTests.m */; };
+		B398942C18581BC800779818 /* TonicSynthManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = B398942B18581BC800779818 /* TonicSynthManager.mm */; };
+		B398946218581EC900779818 /* libTonic-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B398945E18581E7000779818 /* libTonic-iOS.a */; };
+		B398946418581EDA00779818 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B398946318581EDA00779818 /* AudioToolbox.framework */; };
+		B398946618581EDF00779818 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B398946518581EDF00779818 /* Accelerate.framework */; };
+		B398946F18581FA000779818 /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B398946C18581F8300779818 /* libTheAmazingAudioEngine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +35,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = B3988AA61858184100779818;
 			remoteInfo = SynthDesigner;
+		};
+		B398945B18581E7000779818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B398945618581E7000779818 /* TonicLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01F72690171520F900EBB4BB;
+			remoteInfo = "Tonic-OSX";
+		};
+		B398945D18581E7000779818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B398945618581E7000779818 /* TonicLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F23A7CF1171B3D2E00AE8353;
+			remoteInfo = "Tonic-iOS";
+		};
+		B398946018581EC400779818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B398945618581E7000779818 /* TonicLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F23A7CF0171B3D2D00AE8353;
+			remoteInfo = "Tonic-iOS";
+		};
+		B398946B18581F8300779818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B398946718581F8200779818 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C215CEC1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
+		};
+		B398946D18581F9A00779818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B398946718581F8200779818 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C215CEB1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +93,13 @@
 		B3988AD11858184100779818 /* SynthDesignerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SynthDesignerTests-Info.plist"; sourceTree = "<group>"; };
 		B3988AD31858184100779818 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3988AD51858184100779818 /* SynthDesignerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynthDesignerTests.m; sourceTree = "<group>"; };
+		B398942A18581BC800779818 /* TonicSynthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TonicSynthManager.h; sourceTree = "<group>"; };
+		B398942B18581BC800779818 /* TonicSynthManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TonicSynthManager.mm; sourceTree = "<group>"; };
+		B398942D18581C2E00779818 /* libTonic-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libTonic-iOS.a"; path = "External/Tonic/lib/build/Debug-iphoneos/libTonic-iOS.a"; sourceTree = "<group>"; };
+		B398945618581E7000779818 /* TonicLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TonicLib.xcodeproj; path = External/Tonic/lib/TonicLib.xcodeproj; sourceTree = "<group>"; };
+		B398946318581EDA00779818 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B398946518581EDF00779818 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		B398946718581F8200779818 /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheAmazingAudioEngine.xcodeproj; path = External/TheAmazingAudioEngine/TheAmazingAudioEngine.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +107,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B398946F18581FA000779818 /* libTheAmazingAudioEngine.a in Frameworks */,
+				B398946618581EDF00779818 /* Accelerate.framework in Frameworks */,
+				B398946418581EDA00779818 /* AudioToolbox.framework in Frameworks */,
+				B398946218581EC900779818 /* libTonic-iOS.a in Frameworks */,
 				B3988AAD1858184100779818 /* CoreGraphics.framework in Frameworks */,
 				B3988AAF1858184100779818 /* UIKit.framework in Frameworks */,
 				B3988AAB1858184100779818 /* Foundation.framework in Frameworks */,
@@ -82,6 +133,7 @@
 		B3988A9E1858184100779818 = {
 			isa = PBXGroup;
 			children = (
+				B3988EF31858198400779818 /* External */,
 				B3988AB01858184100779818 /* SynthDesigner */,
 				B3988ACF1858184100779818 /* SynthDesignerTests */,
 				B3988AA91858184100779818 /* Frameworks */,
@@ -101,6 +153,9 @@
 		B3988AA91858184100779818 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B398946518581EDF00779818 /* Accelerate.framework */,
+				B398946318581EDA00779818 /* AudioToolbox.framework */,
+				B398942D18581C2E00779818 /* libTonic-iOS.a */,
 				B3988AAA1858184100779818 /* Foundation.framework */,
 				B3988AAC1858184100779818 /* CoreGraphics.framework */,
 				B3988AAE1858184100779818 /* UIKit.framework */,
@@ -112,6 +167,8 @@
 		B3988AB01858184100779818 /* SynthDesigner */ = {
 			isa = PBXGroup;
 			children = (
+				B398942A18581BC800779818 /* TonicSynthManager.h */,
+				B398942B18581BC800779818 /* TonicSynthManager.mm */,
 				B3988AB91858184100779818 /* SDAppDelegate.h */,
 				B3988ABA1858184100779818 /* SDAppDelegate.m */,
 				B3988ABC1858184100779818 /* Main.storyboard */,
@@ -152,6 +209,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B3988EF31858198400779818 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				B398945F18581E7800779818 /* Tonic */,
+				B398943618581CE500779818 /* The Amazing Audiuo Engine */,
+				B3988EF9185819DB00779818 /* Tonic */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		B3988EF9185819DB00779818 /* Tonic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tonic;
+			path = External/Tonic;
+			sourceTree = "<group>";
+		};
+		B398943618581CE500779818 /* The Amazing Audiuo Engine */ = {
+			isa = PBXGroup;
+			children = (
+				B398946718581F8200779818 /* TheAmazingAudioEngine.xcodeproj */,
+			);
+			name = "The Amazing Audiuo Engine";
+			sourceTree = "<group>";
+		};
+		B398945718581E7000779818 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B398945C18581E7000779818 /* libTonic-OSX.a */,
+				B398945E18581E7000779818 /* libTonic-iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B398945F18581E7800779818 /* Tonic */ = {
+			isa = PBXGroup;
+			children = (
+				B398945618581E7000779818 /* TonicLib.xcodeproj */,
+			);
+			name = Tonic;
+			sourceTree = "<group>";
+		};
+		B398946818581F8200779818 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B398946C18581F8300779818 /* libTheAmazingAudioEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +274,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				B398946E18581F9A00779818 /* PBXTargetDependency */,
+				B398946118581EC400779818 /* PBXTargetDependency */,
 			);
 			name = SynthDesigner;
 			productName = SynthDesigner;
@@ -215,6 +325,16 @@
 			mainGroup = B3988A9E1858184100779818;
 			productRefGroup = B3988AA81858184100779818 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B398946818581F8200779818 /* Products */;
+					ProjectRef = B398946718581F8200779818 /* TheAmazingAudioEngine.xcodeproj */;
+				},
+				{
+					ProductGroup = B398945718581E7000779818 /* Products */;
+					ProjectRef = B398945618581E7000779818 /* TonicLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B3988AA61858184100779818 /* SynthDesigner */,
@@ -222,6 +342,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B398945C18581E7000779818 /* libTonic-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libTonic-OSX.a";
+			remoteRef = B398945B18581E7000779818 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B398945E18581E7000779818 /* libTonic-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libTonic-iOS.a";
+			remoteRef = B398945D18581E7000779818 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B398946C18581F8300779818 /* libTheAmazingAudioEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTheAmazingAudioEngine.a;
+			remoteRef = B398946B18581F8300779818 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B3988AA51858184100779818 /* Resources */ = {
@@ -250,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3988AB71858184100779818 /* main.m in Sources */,
+				B398942C18581BC800779818 /* TonicSynthManager.mm in Sources */,
 				B3988AC11858184100779818 /* SDViewController.m in Sources */,
 				B3988ABB1858184100779818 /* SDAppDelegate.m in Sources */,
 			);
@@ -270,6 +415,16 @@
 			isa = PBXTargetDependency;
 			target = B3988AA61858184100779818 /* SynthDesigner */;
 			targetProxy = B3988ACD1858184100779818 /* PBXContainerItemProxy */;
+		};
+		B398946118581EC400779818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Tonic-iOS";
+			targetProxy = B398946018581EC400779818 /* PBXContainerItemProxy */;
+		};
+		B398946E18581F9A00779818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TheAmazingAudioEngine;
+			targetProxy = B398946D18581F9A00779818 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,6 +489,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					External/Tonic/src,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -368,6 +528,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					External/Tonic/src,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -382,7 +547,20 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SynthDesigner/SynthDesigner-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					External/Tonic/src,
+					External/TheAmazingAudioEngine/TheAmazingAudioEngine,
+				);
 				INFOPLIST_FILE = "SynthDesigner/SynthDesigner-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Connor/Mobile\\ Apps/Synth\\ Designer/SynthDesigner/Tonic/lib/build/TonicLib.build/Debug-iphoneos/Tonic-iOS.build/Objects-normal/armv7",
+					"/Users/Connor/Mobile\\ Apps/Synth\\ Designer/SynthDesigner/Tonic/lib/build/TonicLib.build/Debug-iphoneos/Tonic-iOS.build/Objects-normal/armv7s",
+					"/Users/Connor/Mobile\\ Apps/SynthDesigner/External/Tonic/lib/build/TonicLib.build/Debug-iphoneos/Tonic-iOS.build/Objects-normal/armv7",
+					"/Users/Connor/Mobile\\ Apps/SynthDesigner/External/Tonic/lib/build/TonicLib.build/Debug-iphoneos/Tonic-iOS.build/Objects-normal/armv7s",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,7 +573,20 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SynthDesigner/SynthDesigner-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					External/Tonic/src,
+					External/TheAmazingAudioEngine/TheAmazingAudioEngine,
+				);
 				INFOPLIST_FILE = "SynthDesigner/SynthDesigner-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Connor/Mobile\\ Apps/Synth\\ Designer/SynthDesigner/Tonic/lib/build/TonicLib.build/Debug-iphoneos/Tonic-iOS.build/Objects-normal/armv7",
+					"/Users/Connor/Mobile\\ Apps/Synth\\ Designer/SynthDesigner/Tonic/lib/build/TonicLib.build/Debug-iphoneos/Tonic-iOS.build/Objects-normal/armv7s",
+					"/Users/Connor/Mobile\\ Apps/SynthDesigner/External/Tonic/lib/build/TonicLib.build/Debug-iphoneos/Tonic-iOS.build/Objects-normal/armv7",
+					"/Users/Connor/Mobile\\ Apps/SynthDesigner/External/Tonic/lib/build/TonicLib.build/Debug-iphoneos/Tonic-iOS.build/Objects-normal/armv7s",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,6 +653,7 @@
 				B3988ADB1858184100779818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3988ADC1858184100779818 /* Build configuration list for PBXNativeTarget "SynthDesignerTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +662,7 @@
 				B3988ADE1858184100779818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
